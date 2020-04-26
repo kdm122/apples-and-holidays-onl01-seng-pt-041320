@@ -72,7 +72,7 @@ def all_winter_holiday_supplies(holiday_hash)
       end
     end
   end
- return winter_supplies
+ return "Winter: #{winter_supplies}"
 end
 
 def all_supplies_in_holidays(holiday_hash)
