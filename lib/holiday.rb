@@ -34,8 +34,8 @@ end
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-  holiday_hash.each do |season, contact_details_hash|
-    if person == "Freddy Mercury"
+  holiday_hash.each do |season, data|
+    if season == ""Freddy Mercury""
       contact_details_hash.each do |attribute, data|
         if attribute == :favorite_ice_cream_flavors
           data.delete_if {|ice_cream| ice_cream == "strawberry"}
