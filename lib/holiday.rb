@@ -65,15 +65,14 @@ def all_winter_holiday_supplies(holiday_hash)
   winter_supplies = []
   holiday_hash.each do |season, data|
     if season == :winter
-      data.each do |holiday, data|
-        
-        if holiday == :memorial_day
-        holiday_supplies[season][holiday] << supply
+      data.each do |holiday, supp|
+        supp.each do |actual|
+          winter_supplies << actual
         end
       end
     end
   end
-
+ return winter_supplies
 end
 
 def all_supplies_in_holidays(holiday_hash)
