@@ -38,7 +38,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
     if season == :spring
       data.each do |holiday, data|
         if holiday == :memorial_day
-          :memorial_day << supply
+        holiday_supplies[season][holiday] << supply
         end
       end
     end
